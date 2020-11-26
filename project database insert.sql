@@ -5,14 +5,11 @@ CREATE TABLE customer_biodata(id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,fname V
 CREATE TABLE place_order(id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,ref_tbl INT,street_address VARCHAR(100),postcode INT,city VARCHAR(100),district VARCHAR(100),country VARCHAR(100),order_product_id VARCHAR(100),table_name VARCHAR(100),email VARCHAR(100),phone VARCHAR(100),STATUS INT,order_date TIMESTAMP);
 CREATE TABLE product(id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,NAME VARCHAR(100),category VARCHAR(100),sub_category VARCHAR(100),color VARCHAR(100),quantity INT,price DOUBLE,location VARCHAR(100),rating double default 5);
 
-
 create table product2(id int not null auto_increment primary key,name varchar(50),category varchar(50),
 sub_category varchar(50),quantity int,price double,location varchar(50));
 
 CREATE TABLE review(id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,product_id INT,rating DOUBLE,`comment` TEXT,
 user_gmail VARCHAR(50));
-
-CREATE TABLE temp_review(id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,product_id INT,mean_rating DOUBLE);
 
 INSERT INTO product(NAME,category,sub_category,color,quantity,price,location)VALUES
 ('jacket1','jacket','man','black',45,500,'image/product/m_j1.jpg'),
@@ -71,8 +68,11 @@ INSERT INTO product(NAME,category,sub_category,color,quantity,price,location)VAL
 ('Tops & t-shirt4','tops and t-shirt','woman','blue',13,299.99,'image/product/w_tt4.jpg'),
 ('Tops & t-shirt5','tops and t-shirt','woman','black',35,399.99,'image/product/w_tt5.jpg');
 
+/*
 set global event_scheduler=on;
-
+                   
+CREATE TABLE temp_review(id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,product_id INT,mean_rating DOUBLE);
+                   
 delimiter |
 create event event_mean_rating on schedule every 1 minute do
 begin
@@ -82,6 +82,7 @@ update product,temp_review set product.rating=temp_review.mean_rating where prod
 truncate temp_review;
 end |
 delimiter;
+*/
 
 select * from product
 truncate product
