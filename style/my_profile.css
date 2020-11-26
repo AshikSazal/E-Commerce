@@ -1,0 +1,31 @@
+.container{
+  margin-top: 145px;
+  margin-bottom: 50px;
+}
+table{
+  text-align: center;
+  width: 100%;
+  font-family: Trebuchet MS;
+  text-align: left;
+  margin-bottom: 50px;
+}
+th{
+  background-color: #588c7e;
+  color: white;
+  font-size: 25px;
+}
+tr:nth-child(even){
+  background-color: #ddd;
+}
+th td{
+  display: flex;
+}
+table,tr,th{
+  border-collapse: collapse;
+  border: 1px solid black;
+  text-align: center;
+}
+td{
+  font-size: 20px;
+  font-family: Arial Narrow;
+}

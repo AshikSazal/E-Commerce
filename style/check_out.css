@@ -1,0 +1,32 @@
+.check-out{
+  margin-top: 95px;
+  padding: 50px 0;
+}
+.my_info{
+  border: 3px solid #beb9b4;
+  height: 2.5rem;
+  width: 31.56rem;
+}
+.shop-info{
+  float: right;
+  background-color: #f2f4f2;
+}
+.user-info{
+  margin-left: 50px;
+}
+table{
+  margin: 10% 0 10% 10%;
+}
+th,td{
+  font-size: 20px;
+  padding: 5px;
+}
+.place-order{
+  width: 510px;
+  margin-left: 35px;
+  height: 50px;
+  margin-top: 50px;
+}
+span{
+  color: red;
+}

@@ -1,0 +1,32 @@
+body{
+  margin: 0;
+}
+.pro-img{
+  max-width: 100%;
+  height: auto;
+  padding: 20px;
+  background-color: lightblue;
+  background-color: radial-gradient(white 30%, lightblue 70%);
+}
+.fa-star,.fa-star-half-alt{
+  padding: 3% 0;
+  color: #E9AB17;
+}
+
+.back-shadow{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  padding-bottom: 40px;
+}
+.container{
+  margin-top: 135px;
+  position: relative;
+}
+.text-block {
+  position: absolute;
+  color: red;
+  margin-top: 40%;
+  min-width: 90%;
+  transform: rotate(-45deg);
+  font-family: Arial Black;
+}

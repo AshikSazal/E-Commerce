@@ -1,0 +1,17 @@
+.container{
+  margin-top: 95px;
+  text-align: center;
+}
+input{
+  border: 3px solid #beb9b4;
+  height: 40px;
+}
+.submit{
+  background-color: #b29f94;
+  color: white;
+  border: none;
+}
+span{
+  color: red;
+  text-align: center;
+}

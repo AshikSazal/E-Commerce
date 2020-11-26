@@ -1,0 +1,30 @@
+@media screen and (max-width: 800px) {
+  .registration{
+    padding-top: 3.125rem;
+  }
+  .fl,.epc{
+    width: 31.56rem;
+  }
+}
+input{
+  border: 3px solid #beb9b4;
+  height: 2.5rem;
+}
+.fl{
+  width: 15.625rem;
+}
+.epc{
+  width: 31.56rem;
+}
+.submit{
+  background-color: #b29f94;
+  color: white;
+  border: none;
+}
+span{
+  color: red;
+}
+.registration{
+  margin-top: 9.1rem;
+  margin-bottom: 3.125rem;
+}

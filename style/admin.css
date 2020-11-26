@@ -1,0 +1,19 @@
+.admin-control-panel{
+  margin-top: 95px;
+  text-align: center;
+  background-image: url('../image/admin.jpg');
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+}
+.database{
+  margin-top: 104px;
+  color: white;
+}
+.control-panel{
+  font-family: Century Gothic;
+  font-weight: 700;
+  color: white;
+}
