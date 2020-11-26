@@ -84,11 +84,11 @@ end |
 delimiter;
 */
 
-select * from product
-truncate product
-select * from admin_info
+select * from product;
+truncate product;
+select * from admin_info;
 
-insert product2 select * from product
-select * from product2
+insert product2 select * from product;
+select * from product2;
 
 SELECT COUNT(*) FROM information_schema.columns WHERE table_name = 'product';  // column count
