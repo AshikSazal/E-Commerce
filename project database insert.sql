@@ -5,11 +5,7 @@ CREATE TABLE customer_biodata(id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,fname V
 CREATE TABLE place_order(id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,ref_tbl INT,street_address VARCHAR(100),postcode INT,city VARCHAR(100),district VARCHAR(100),country VARCHAR(100),order_product_id VARCHAR(100),table_name VARCHAR(100),email VARCHAR(100),phone VARCHAR(100),STATUS INT,order_date TIMESTAMP);
 CREATE TABLE product(id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,NAME VARCHAR(100),category VARCHAR(100),sub_category VARCHAR(100),color VARCHAR(100),quantity INT,price DOUBLE,location VARCHAR(100),rating double default 5);
 
-create table product2(id int not null auto_increment primary key,name varchar(50),category varchar(50),
-sub_category varchar(50),quantity int,price double,location varchar(50));
-
-CREATE TABLE review(id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,product_id INT,rating DOUBLE,`comment` TEXT,
-user_gmail VARCHAR(50));
+CREATE TABLE review(id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,product_id INT,rating DOUBLE,`comment` TEXT, user_gmail VARCHAR(50));
 
 INSERT INTO product(NAME,category,sub_category,color,quantity,price,location)VALUES
 ('jacket1','jacket','man','black',45,500,'image/product/m_j1.jpg'),
@@ -84,6 +80,10 @@ end |
 delimiter;
 */
 
+/*
+create table product2(id int not null auto_increment primary key,name varchar(50),category varchar(50),
+sub_category varchar(50),quantity int,price double,location varchar(50));
+
 select * from product;
 truncate product;
 select * from admin_info;
@@ -92,3 +92,4 @@ insert product2 select * from product;
 select * from product2;
 
 SELECT COUNT(*) FROM information_schema.columns WHERE table_name = 'product';  // column count
+*/
